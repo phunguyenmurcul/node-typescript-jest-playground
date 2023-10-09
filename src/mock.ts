@@ -6,6 +6,11 @@ export const methodBar = (): string => {
   return 'bar';
 };
 
-const methods = { methodFoo, methodBar };
-
-export default methods;
+export default {
+  methodFoo: (): string => {
+    return 'foo';
+  },
+  methodBar: (): string => {
+    return 'bar';
+  },
+};
