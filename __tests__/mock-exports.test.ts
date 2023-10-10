@@ -1,6 +1,7 @@
+import { vi, describe, it, expect } from 'vitest';
 import { useMethodFoo, useMethodBar } from '../src/main.js';
 
-jest.mock('../src/mock.js', () => ({
+vi.mock('../src/mock.js', () => ({
   methodBar: () => 'foo',
   methodFoo: () => 'bar',
 }));
